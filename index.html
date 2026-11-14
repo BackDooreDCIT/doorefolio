@@ -26,7 +26,7 @@
   <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
 
   <nav class="nav">
-    <span class="nav__mark mono">PB</span>
+    <span class="nav__mark mono"><span class="nav__mark-full">Parattakorn Boonprakob</span><span class="nav__mark-short">PB</span></span>
     <ul class="nav__links">
       <li><a class="nav__link mono" href="#about">About</a></li>
       <li><a class="nav__link mono" href="#skills">Skills</a></li>
@@ -37,11 +37,16 @@
 
   <main id="main">
     <section class="hero">
-      <p class="hero__eyebrow mono">Frontend development &amp; UX/UI design</p>
-      <h1 class="hero__name">Parattakorn<br>Boonprakob</h1>
-      <p class="hero__aka mono">aka BackDoore · DCIT</p>
-      <p class="hero__role">Building clean interfaces, with an eye on infrastructure and networking next.</p>
-      <a class="hero__cue mono" href="#about">Scroll ↓</a>
+      <div class="hero__content">
+        <p class="hero__eyebrow mono">Frontend development &amp; UX/UI design</p>
+        <h1 class="hero__name">Parattakorn<br>Boonprakob</h1>
+        <p class="hero__aka mono">aka BackDoore · DCIT</p>
+        <p class="hero__role">Building clean interfaces, with an eye on infrastructure and networking next.</p>
+        <a class="hero__cue mono" href="#about">Scroll ↓</a>
+      </div>
+      <div class="hero__portrait">
+        <canvas id="hero-portrait" aria-hidden="true"></canvas>
+      </div>
     </section>
 
     <section id="about" class="section reveal">
@@ -128,8 +133,7 @@
           <p class="card__meta mono">2025 · Developer · PHP + Google Sheets API</p>
           <p class="card__summary">A digital behavior-score system for Ratwinit Bangkaeo School, replacing paperwork
             with real-time tracking.</p>
-          <a class="card__link mono" href="https://github.com/BackDooreDCIT/RWB-StudentReport" target="_blank"
-            rel="noopener">View project</a>
+          <a class="card__link mono" href="work/rwb-student-report.html">View project</a>
         </article>
         <article class="card reveal" style="--reveal-delay: 120ms">
           <span class="card__id mono">OBJ.03</span>
@@ -137,8 +141,7 @@
           <p class="card__meta mono">2024–2026 · Team Member · Python / FastAPI + Whisper AI</p>
           <p class="card__summary">An AI-powered speech-practice web app for people with Aphasia, built with a team for
             HIT Award 2026.</p>
-          <a class="card__link mono" href="https://github.com/BackDooreDCIT/AuraTalk" target="_blank"
-            rel="noopener">View project</a>
+          <a class="card__link mono" href="work/auratalk.html">View project</a>
         </article>
       </div>
       <p class="work-more"><a class="mono" href="https://github.com/BackDooreDCIT?tab=repositories" target="_blank"
@@ -168,6 +171,8 @@
   <p class="coord-readout mono">BKK · 13.7°N · <span id="bkk-time"></span></p>
 
   <script src="assets/js/starfield.js" defer></script>
+  <script src="assets/js/portrait-data.js" defer></script>
+  <script src="assets/js/portrait.js" defer></script>
   <script src="assets/js/site.js" defer></script>
 </body>
 

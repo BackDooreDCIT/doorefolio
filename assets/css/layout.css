@@ -29,6 +29,15 @@ main {
   font-size: var(--fs-eyebrow);
 }
 
+.nav__mark-full {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .nav__mark-full { display: inline; }
+  .nav__mark-short { display: none; }
+}
+
 .nav__links {
   display: flex;
   gap: var(--space-5);
@@ -46,9 +55,18 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: var(--space-8);
   padding: var(--space-5);
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.hero__content {
+  max-width: 640px;
+}
+
+.hero__portrait {
+  display: none;
 }
 
 .hero__eyebrow {
@@ -196,6 +214,16 @@ main {
   border: 1px solid var(--line);
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+}
+
+.project-links .card__link {
+  margin-top: 0;
+}
+
 .feature-list {
   list-style: none;
   padding: 0;
@@ -229,5 +257,22 @@ main {
 }
 
 @media (min-width: 768px) {
-  .hero { padding: var(--space-9); }
+  .hero {
+    padding: var(--space-9);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero__portrait {
+    display: block;
+    flex: 0 0 auto;
+    width: clamp(220px, 26vw, 340px);
+  }
+
+  .hero__portrait canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
