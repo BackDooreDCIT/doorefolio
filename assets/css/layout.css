@@ -1,0 +1,233 @@
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+main {
+  position: relative;
+}
+
+/* Nav */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--line);
+  background: rgba(5, 5, 7, .72);
+  backdrop-filter: blur(6px);
+}
+
+.nav__mark {
+  font-size: var(--fs-eyebrow);
+}
+
+.nav__links {
+  display: flex;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .nav { padding: var(--space-4) var(--space-9); }
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-5);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero__eyebrow {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.hero__aka {
+  color: var(--text-muted);
+  margin-top: var(--space-3);
+}
+
+.hero__name {
+  font-size: var(--fs-h1);
+  letter-spacing: -.01em;
+}
+
+.hero__role {
+  margin-top: var(--space-5);
+  color: var(--text-secondary);
+  font-size: var(--fs-h2);
+  font-weight: 300;
+  max-width: 24ch;
+}
+
+.hero__cue {
+  margin-top: var(--space-8);
+  color: var(--text-muted);
+}
+
+/* Sections */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-9) var(--space-5);
+}
+
+.section__head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-5);
+  margin-bottom: var(--space-7);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: var(--space-4);
+}
+
+.section__num {
+  color: var(--text-muted);
+}
+
+.section__body {
+  max-width: 64ch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  color: var(--text-secondary);
+}
+
+@media (min-width: 768px) {
+  .section { padding: var(--space-10) var(--space-9); }
+}
+
+/* Work grid */
+.work-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .work-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .work-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.work-more {
+  margin-top: var(--space-6);
+  color: var(--text-secondary);
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  gap: var(--space-7) var(--space-6);
+  grid-template-columns: 1fr;
+}
+
+.skill-group {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+}
+
+@media (min-width: 640px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact__links {
+  display: flex;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+/* Project page */
+.project-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding-bottom: var(--space-7);
+}
+
+.project-hero__title {
+  font-size: clamp(2rem, 1.5rem + 3vw, 4rem);
+  margin: var(--space-2) 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-top: var(--space-6);
+  border: 1px solid var(--line);
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 64ch;
+  color: var(--text-secondary);
+}
+
+/* Footer */
+.site-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-5);
+  border-top: 1px solid var(--line);
+  color: var(--text-muted);
+}
+
+@media (min-width: 768px) {
+  .site-footer { padding: var(--space-5) var(--space-9); }
+}
+
+.coord-readout {
+  position: fixed;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  color: var(--text-muted);
+  font-size: var(--fs-eyebrow);
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .hero { padding: var(--space-9); }
+}

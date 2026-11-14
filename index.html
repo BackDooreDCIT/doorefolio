@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parattakorn Boonprakob — Portfolio</title>
+  <meta name="description" content="Portfolio of Parattakorn Boonprakob — frontend development and UX/UI design.">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@300;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+  <a class="skip-link mono" href="#main">Skip to content</a>
+
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+
+  <nav class="nav">
+    <span class="nav__mark mono">PB</span>
+    <ul class="nav__links">
+      <li><a class="nav__link mono" href="#about">About</a></li>
+      <li><a class="nav__link mono" href="#skills">Skills</a></li>
+      <li><a class="nav__link mono" href="#work">Work</a></li>
+      <li><a class="nav__link mono" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="hero">
+      <p class="hero__eyebrow mono">Frontend development &amp; UX/UI design</p>
+      <h1 class="hero__name">Parattakorn<br>Boonprakob</h1>
+      <p class="hero__aka mono">aka BackDoore · DCIT</p>
+      <p class="hero__role">Building clean interfaces, with an eye on infrastructure and networking next.</p>
+      <a class="hero__cue mono" href="#about">Scroll ↓</a>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="section__head">
+        <span class="section__num mono">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="section__body">
+        <p>I'm a high school student from Thailand focused on frontend development and UX/UI design, currently preparing to study at
+          KMITL's School of IT (King Mongkut's Institute of Technology Ladkrabang).</p>
+        <p>Looking further ahead, my interest goes beyond the frontend — I want to go deeper into infrastructure and
+          networking, with network engineering as the career I'm ultimately working toward.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="section__head">
+        <span class="section__num mono">02</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal" style="--reveal-delay: 0ms">
+          <h3 class="skill-group__title mono">Programming Languages</h3>
+          <ul class="skill-list">
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/cplusplus')" aria-hidden="true"></span>C/C++</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/python')" aria-hidden="true"></span>Python</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/javascript')" aria-hidden="true"></span>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal" style="--reveal-delay: 60ms">
+          <h3 class="skill-group__title mono">Frontend Development</h3>
+          <ul class="skill-list">
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/html5')" aria-hidden="true"></span>HTML</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/css')" aria-hidden="true"></span>CSS</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/javascript')" aria-hidden="true"></span>JavaScript</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/typescript')" aria-hidden="true"></span>TypeScript</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/react')" aria-hidden="true"></span>React.js</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/tailwindcss')" aria-hidden="true"></span>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal" style="--reveal-delay: 120ms">
+          <h3 class="skill-group__title mono">Backend Development</h3>
+          <ul class="skill-list">
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/php')" aria-hidden="true"></span>PHP</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/python')" aria-hidden="true"></span>Python</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal" style="--reveal-delay: 180ms">
+          <h3 class="skill-group__title mono">Software</h3>
+          <ul class="skill-list">
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/blender')" aria-hidden="true"></span>Blender</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/figma')" aria-hidden="true"></span>Figma</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://unpkg.com/lucide-static@1.73.0/icons/image.svg')" aria-hidden="true"></span>Adobe Photoshop</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://unpkg.com/lucide-static@1.73.0/icons/film.svg')" aria-hidden="true"></span>Adobe Premiere</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal" style="--reveal-delay: 240ms">
+          <h3 class="skill-group__title mono">Others</h3>
+          <ul class="skill-list">
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/git')" aria-hidden="true"></span>Git</li>
+            <li><span class="skill-icon" style="--icon-src: url('https://cdn.simpleicons.org/arduino')" aria-hidden="true"></span>Arduino</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section reveal">
+      <div class="section__head">
+        <span class="section__num mono">03</span>
+        <h2>Work</h2>
+      </div>
+      <div class="work-grid">
+        <article class="card reveal" style="--reveal-delay: 0ms">
+          <span class="card__id mono">OBJ.01</span>
+          <h3 class="card__title">deceithome</h3>
+          <p class="card__meta mono">2025 · Creator · Chrome Extension</p>
+          <p class="card__summary">A Chrome extension that replaces your new tab with a clean dashboard — clock, search,
+            shortcuts, and custom themes.</p>
+          <a class="card__link mono" href="work/deceithome.html">View project</a>
+        </article>
+        <article class="card reveal" style="--reveal-delay: 60ms">
+          <span class="card__id mono">OBJ.02</span>
+          <h3 class="card__title">RWB Student Report</h3>
+          <p class="card__meta mono">2025 · Developer · PHP + Google Sheets API</p>
+          <p class="card__summary">A digital behavior-score system for Ratwinit Bangkaeo School, replacing paperwork
+            with real-time tracking.</p>
+          <a class="card__link mono" href="https://github.com/BackDooreDCIT/RWB-StudentReport" target="_blank"
+            rel="noopener">View project</a>
+        </article>
+        <article class="card reveal" style="--reveal-delay: 120ms">
+          <span class="card__id mono">OBJ.03</span>
+          <h3 class="card__title">AuraTalk</h3>
+          <p class="card__meta mono">2024–2026 · Team Member · Python / FastAPI + Whisper AI</p>
+          <p class="card__summary">An AI-powered speech-practice web app for people with Aphasia, built with a team for
+            HIT Award 2026.</p>
+          <a class="card__link mono" href="https://github.com/BackDooreDCIT/AuraTalk" target="_blank"
+            rel="noopener">View project</a>
+        </article>
+      </div>
+      <p class="work-more"><a class="mono" href="https://github.com/BackDooreDCIT?tab=repositories" target="_blank"
+          rel="noopener">View more projects on GitHub →</a></p>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="section__head">
+        <span class="section__num mono">04</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact">
+        <a class="contact__email" href="mailto:noempang2@gmail.com">noempang2@gmail.com</a>
+        <ul class="contact__links">
+          <li><a class="contact__link mono" href="https://github.com/BackDooreDCIT" target="_blank"
+              rel="noopener">GitHub</a></li>
+          <li><span class="contact__link contact__link--static mono">Discord — backdoore</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="site-footer mono">
+      <p>&copy; 2026 Parattakorn Boonprakob</p>
+    </footer>
+  </main>
+
+  <p class="coord-readout mono">BKK · 13.7°N · <span id="bkk-time"></span></p>
+
+  <script src="assets/js/starfield.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+
+</html>
