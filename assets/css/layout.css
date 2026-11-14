@@ -234,6 +234,20 @@ main {
   color: var(--text-secondary);
 }
 
+/* Error page */
+.error-page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.error-page__title {
+  font-size: var(--fs-h1);
+}
+
 /* Footer */
 .site-footer {
   max-width: 1200px;

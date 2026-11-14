@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal lost — Parattakorn Boonprakob</title>
+  <meta name="description" content="Page not found.">
+  <meta name="theme-color" content="#050507">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <a class="skip-link mono" href="#main">Skip to content</a>
+
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+
+  <nav class="nav">
+    <a class="nav__mark mono" href="index.html"><span class="nav__mark-full">Parattakorn Boonprakob</span><span class="nav__mark-short">PB</span></a>
+    <ul class="nav__links">
+      <li><a class="nav__link mono" href="index.html#about">About</a></li>
+      <li><a class="nav__link mono" href="index.html#skills">Skills</a></li>
+      <li><a class="nav__link mono" href="index.html#work">Work</a></li>
+      <li><a class="nav__link mono" href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="section error-page reveal">
+      <span class="card__id mono">OBJ.404</span>
+      <h1 class="error-page__title">Signal lost</h1>
+      <p class="hero__role">The page you're looking for has drifted out of range.</p>
+      <a class="card__link mono" href="index.html">Return to index</a>
+    </section>
+  </main>
+
+  <p class="coord-readout mono">BKK · 13.7°N · <span id="bkk-time"></span></p>
+
+  <script src="assets/js/starfield.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
