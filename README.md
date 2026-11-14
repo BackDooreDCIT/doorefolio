@@ -4,12 +4,12 @@ My personal portfolio that I have been developing locally, I decided to commit t
 
 ## Design
 
-Monochrome, dark-only, space/astronomy themed — a sparse "deep field" starfield behind everything, with the theme living in the chrome (hairlines, mono metadata, catalogue-style IDs on project cards) rather than the content itself.
+I decided to with a minimalistic monochrome, dark-only, space/astronomy themed — a sparse "deep field" starfield behind everything. It took me a while to make this work but I'm quite proud of how it turned out.
 
 A few things worth knowing before poking around the code:
 
-- **Starfield background** ([assets/js/starfield.js](assets/js/starfield.js)) — a three-layer parallax canvas with scroll + pointer response and a slow autonomous drift. Freezes to a single static frame under `prefers-reduced-motion`, pauses when the tab is hidden.
-- **Everything degrades on purpose** — I built the site to stay fully readable and navigable with JavaScript disabled, animations gated behind `prefers-reduced-motion`, and focus states always visible.
+- **Starfield background** ([assets/js/starfield.js](assets/js/starfield.js)) - a three-layer parallax canvas with scroll + pointer response and a slow autonomous drift. Freezes to a single static frame under `prefers-reduced-motion`, pauses when the tab is hidden.
+- **Everything degrades on purpose** - I built the site to stay fully readable and navigable with JavaScript disabled, animations gated behind `prefers-reduced-motion`, and focus states always visible.
 
 ## Project structure
 
@@ -25,7 +25,6 @@ doorefolio/
 │   ├── js/                 # starfield, hero portrait, nav/reveal behavior
 │   ├── img/
 │   └── favicon/
-└── info                    # my personal content notes (not shipped to the site)
 ```
 
 I wrote the project pages by hand instead of generating them from a data file which keeps things fast and simple.
