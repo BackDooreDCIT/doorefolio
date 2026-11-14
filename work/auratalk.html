@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AuraTalk — Parattakorn Boonprakob</title>
+  <meta name="description" content="AuraTalk — an AI-powered speech-practice web app for people with Aphasia, built for HIT Award 2026.">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+  <a class="skip-link mono" href="#main">Skip to content</a>
+
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+
+  <nav class="nav">
+    <a class="nav__mark mono" href="../index.html"><span class="nav__mark-full">Parattakorn Boonprakob</span><span class="nav__mark-short">PB</span></a>
+    <ul class="nav__links">
+      <li><a class="nav__link mono" href="../index.html#about">About</a></li>
+      <li><a class="nav__link mono" href="../index.html#skills">Skills</a></li>
+      <li><a class="nav__link mono" href="../index.html#work">Work</a></li>
+      <li><a class="nav__link mono" href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="section project-hero reveal">
+      <a class="back-link mono" href="../index.html#work">&larr; Back to Work</a>
+      <span class="card__id mono">OBJ.03</span>
+      <h1 class="project-hero__title">AuraTalk</h1>
+      <p class="card__meta mono">2024–2026 · Team Member · Python / FastAPI + Whisper AI</p>
+      <ul class="project-tags">
+        <li class="tag mono">Python</li>
+        <li class="tag mono">FastAPI</li>
+        <li class="tag mono">Whisper AI</li>
+        <li class="tag mono">PyTorch</li>
+        <li class="tag mono">Supabase</li>
+      </ul>
+      <a class="card__link mono" href="https://github.com/BackDooreDCIT/AuraTalk" target="_blank" rel="noopener">View on GitHub</a>
+    </section>
+
+    <section class="section reveal">
+      <div class="section__head">
+        <span class="section__num mono">01</span>
+        <h2>Overview</h2>
+      </div>
+      <div class="section__body">
+        <p>A web application designed to help people with Aphasia practice speaking anytime, anywhere, using AI-powered speech recognition to support their exercises.</p>
+        <p>Built with a team — <strong>M18: The Procrastinators</strong> — as a finalist entry for HIT Award 2026 (Health Innovation and Technology Award). The project was also a semifinalist at NSC 2025 and received an Honorable Award at the AI Thailand Hackathon 2024.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section__head">
+        <span class="section__num mono">02</span>
+        <h2>Features</h2>
+      </div>
+      <ul class="feature-list">
+        <li>Two user roles — SLP (Speech-Language Pathologist) and Patient</li>
+        <li>SLPs can manage patients, assign lessons, and track progress</li>
+        <li>Patients complete speaking exercises with AI-powered speech recognition</li>
+        <li>Thai speech-to-text powered by Whisper</li>
+        <li>Text-to-speech support via the VAJA API</li>
+        <li>Secure authentication with hashed passwords</li>
+      </ul>
+    </section>
+
+    <footer class="site-footer mono">
+      <p>&copy; 2026 Parattakorn Boonprakob</p>
+    </footer>
+  </main>
+
+  <p class="coord-readout mono">BKK · 13.7°N · <span id="bkk-time"></span></p>
+
+  <script src="../assets/js/starfield.js" defer></script>
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

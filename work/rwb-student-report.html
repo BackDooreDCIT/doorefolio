@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RWB Student Report — Parattakorn Boonprakob</title>
+  <meta name="description" content="RWB Student Report — a digital behavior-score management system for Ratwinit Bangkaeo School.">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+  <a class="skip-link mono" href="#main">Skip to content</a>
+
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+
+  <nav class="nav">
+    <a class="nav__mark mono" href="../index.html"><span class="nav__mark-full">Parattakorn Boonprakob</span><span class="nav__mark-short">PB</span></a>
+    <ul class="nav__links">
+      <li><a class="nav__link mono" href="../index.html#about">About</a></li>
+      <li><a class="nav__link mono" href="../index.html#skills">Skills</a></li>
+      <li><a class="nav__link mono" href="../index.html#work">Work</a></li>
+      <li><a class="nav__link mono" href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section class="section project-hero reveal">
+      <a class="back-link mono" href="../index.html#work">&larr; Back to Work</a>
+      <span class="card__id mono">OBJ.02</span>
+      <h1 class="project-hero__title">RWB Student Report</h1>
+      <p class="card__meta mono">2025 · Developer · PHP + Google Sheets API</p>
+      <ul class="project-tags">
+        <li class="tag mono">PHP</li>
+        <li class="tag mono">HTML</li>
+        <li class="tag mono">CSS</li>
+        <li class="tag mono">JavaScript</li>
+        <li class="tag mono">Google Sheets API</li>
+      </ul>
+      <div class="project-links">
+        <a class="card__link mono" href="https://github.com/BackDooreDCIT/RWB-StudentReport" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="card__link mono" href="https://rwbstudentreport.rf.gd/" target="_blank" rel="noopener">View Live Site</a>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section__head">
+        <span class="section__num mono">01</span>
+        <h2>Overview</h2>
+      </div>
+      <div class="section__body">
+        <p>A digital behavior-score management system built for Ratwinit Bangkaeo School, created to help teachers manage student behavior records and score deductions in a more organized and efficient way.</p>
+        <p>It replaces traditional paper tracking with a web platform backed by the Google Sheets API, so records stay accessible and up to date for both teachers and administrators.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section__head">
+        <span class="section__num mono">02</span>
+        <h2>Features</h2>
+      </div>
+      <ul class="feature-list">
+        <li>Student information management</li>
+        <li>Behavior score deduction system</li>
+        <li>Score deduction history tracking</li>
+        <li>User login and authentication system</li>
+        <li>Admin and teacher management dashboard</li>
+        <li>Real-time data updates</li>
+      </ul>
+    </section>
+
+    <footer class="site-footer mono">
+      <p>&copy; 2026 Parattakorn Boonprakob</p>
+    </footer>
+  </main>
+
+  <p class="coord-readout mono">BKK · 13.7°N · <span id="bkk-time"></span></p>
+
+  <script src="../assets/js/starfield.js" defer></script>
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>
