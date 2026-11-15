@@ -48,6 +48,17 @@
       <li><a class="nav__link mono" href="#contact">Contact</a></li>
     </ul>
   </nav>
+  <script>
+    (function () {
+      var nav = document.querySelector('.nav');
+      if (!nav) return;
+      function setNavHeight() {
+        document.documentElement.style.setProperty('--nav-h', nav.offsetHeight + 'px');
+      }
+      setNavHeight();
+      window.addEventListener('resize', setNavHeight);
+    })();
+  </script>
 
   <main id="main">
     <section class="hero">
@@ -134,28 +145,40 @@
       </div>
       <div class="work-grid">
         <article class="card reveal" style="--reveal-delay: 0ms">
-          <span class="card__id mono">OBJ.01</span>
-          <h3 class="card__title">deceithome</h3>
-          <p class="card__meta mono">2025 · Creator · Chrome Extension</p>
-          <p class="card__summary">A Chrome extension that replaces your new tab with a clean dashboard — clock, search,
-            shortcuts, and custom themes.</p>
-          <a class="card__link mono" href="work/deceithome.html">View project</a>
+          <div class="card__media">
+            <img src="assets/img/deceithome/preview.png" alt="deceithome new tab page showing a digital clock, search bar, and pinned shortcut tiles" width="1366" height="768" loading="lazy">
+          </div>
+          <div class="card__body">
+            <span class="card__id mono">OBJ.01</span>
+            <h3 class="card__title">deceithome</h3>
+            <p class="card__meta mono">2025 · Creator · Chrome Extension</p>
+            <p class="card__summary">A clean, minimalist new tab replacement.</p>
+            <a class="card__link mono" href="work/deceithome.html" aria-label="View deceithome project">View project</a>
+          </div>
         </article>
         <article class="card reveal" style="--reveal-delay: 60ms">
-          <span class="card__id mono">OBJ.02</span>
-          <h3 class="card__title">RWB Student Report</h3>
-          <p class="card__meta mono">2025 · Developer · PHP + Google Sheets API</p>
-          <p class="card__summary">A digital behavior-score system for Ratwinit Bangkaeo School, replacing paperwork
-            with real-time tracking.</p>
-          <a class="card__link mono" href="work/rwb-student-report.html">View project</a>
+          <div class="card__media">
+            <img src="assets/img/rwb-student-report/preview.png" alt="RWB Student Report login page with a student ID field" width="1920" height="1200" loading="lazy">
+          </div>
+          <div class="card__body">
+            <span class="card__id mono">OBJ.02</span>
+            <h3 class="card__title">RWB Student Report</h3>
+            <p class="card__meta mono">2025 · Developer · PHP + Google Sheets API</p>
+            <p class="card__summary">Digital behavior-score tracking for Ratwinit Bangkaeo School.</p>
+            <a class="card__link mono" href="work/rwb-student-report.html" aria-label="View RWB Student Report project">View project</a>
+          </div>
         </article>
         <article class="card reveal" style="--reveal-delay: 120ms">
-          <span class="card__id mono">OBJ.03</span>
-          <h3 class="card__title">AuraTalk</h3>
-          <p class="card__meta mono">2024–2026 · Team Member · Python / FastAPI + Whisper AI</p>
-          <p class="card__summary">An AI-powered speech-practice web app for people with Aphasia, built with a team for
-            HIT Award 2026.</p>
-          <a class="card__link mono" href="work/auratalk.html">View project</a>
+          <div class="card__media">
+            <img src="assets/img/auratalk/preview.png" alt="AuraTalk dashboard showing a list of speech exercise assignments" width="884" height="551" loading="lazy">
+          </div>
+          <div class="card__body">
+            <span class="card__id mono">OBJ.03</span>
+            <h3 class="card__title">AuraTalk</h3>
+            <p class="card__meta mono">2024–2026 · Team Member · Python / FastAPI + Whisper AI</p>
+            <p class="card__summary">AI speech practice for people with Aphasia.</p>
+            <a class="card__link mono" href="work/auratalk.html" aria-label="View AuraTalk project">View project</a>
+          </div>
         </article>
       </div>
       <p class="work-more"><a class="mono" href="https://github.com/BackDooreDCIT?tab=repositories" target="_blank"
