@@ -44,3 +44,7 @@ No install step. Either:
 1. Copy [work/_template.html](work/_template.html) to `work/<slug>.html`.
 2. Fill in the catalogue ID, title, meta line, tags, links, and an Overview/Features section (or whatever sections fit the project).
 3. Add a matching card to the Work grid in [index.html](index.html).
+
+## About photo
+
+The About section expects a photo at `assets/img/about/portrait.jpg`. I'm keeping that one out of the repo on purpose (it's in .gitignore) and only adding it on the deployed host.
