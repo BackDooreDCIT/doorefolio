@@ -2,6 +2,8 @@
 
 My personal portfolio that I have been developing locally, I decided to commit this to GitHub for further development or edits.
 
+***This project is being deployed [here](https://backdoore.page.gd/)***
+
 ## Design
 
 I decided to with a minimalistic monochrome, dark-only, space/astronomy themed — a sparse "deep field" starfield behind everything. It took me a while to make this work but I'm quite proud of how it turned out.
