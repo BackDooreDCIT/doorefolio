@@ -141,6 +141,10 @@ main {
   max-width: 240px;
   height: auto;
   flex: 0 0 auto;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
 }
 
 #about .section__body p {

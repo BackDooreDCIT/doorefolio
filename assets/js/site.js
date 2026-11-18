@@ -77,4 +77,10 @@
 
     startClock();
   }
+
+  var aboutPhoto = document.querySelector('.about-photo');
+  if (aboutPhoto) {
+    aboutPhoto.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+    aboutPhoto.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  }
 })();
