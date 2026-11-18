@@ -200,9 +200,50 @@
   border-bottom-color: var(--line-hover);
 }
 
-.contact__link--static {
+.contact-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+@media (min-width: 480px) {
+  .contact-icon {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}
+
+.contact-icon__glyph {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  background-color: var(--text-secondary);
+  -webkit-mask-image: var(--icon-src);
+  mask-image: var(--icon-src);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  transition: background-color .3s ease;
+}
+
+.contact-icon__caption {
   color: var(--text-muted);
-  border-bottom-color: transparent;
+  font-size: var(--fs-eyebrow);
+  transition: color .3s ease;
+}
+
+a.contact-icon:hover .contact-icon__glyph,
+a.contact-icon:focus-visible .contact-icon__glyph {
+  background-color: var(--glow);
+}
+
+a.contact-icon:hover .contact-icon__caption,
+a.contact-icon:focus-visible .contact-icon__caption {
+  color: var(--text-primary);
 }
 
 /* Reveal */
